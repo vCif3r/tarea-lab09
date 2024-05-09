@@ -1,0 +1,12 @@
+<div class="container-fluid bg-fluid py-3">
+    <div class="container">
+        <h2 class="text-center">Películas 2024</h2>
+        <div class="row">
+            @for (pelicula of peliculas; track $index) {
+            <div class="col-xl-3 col-6">
+                <app-card [pelicula]="pelicula"></app-card>
+            </div>
+            }
+        </div>
+    </div>
+</div>
